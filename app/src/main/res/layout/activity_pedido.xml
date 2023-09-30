@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinnerClientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selecione o Cliente" />
+
+        <Spinner
+            android:id="@+id/spinnerItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Selecione o Item" />
+
+        <EditText
+            android:id="@+id/edtQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Quantidade" />
+
+        <Button
+            android:id="@+id/btnAdicionarItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Item" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewItens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtValorTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Total: R$0.00" />
+
+        <TextView
+            android:id="@+id/txtTotalItens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total de Itens: 0" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButtonAVista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="À Vista" />
+
+            <RadioButton
+                android:id="@+id/radioButtonAPrazo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Prazo" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtParcelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Número de Parcelas" />
+
+        <ListView
+            android:id="@+id/listViewParcelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtValorTotalPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Total do Pedido: R$0.00" />
+
+        <Spinner
+            android:id="@+id/spinnerEnderecos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço de Entrega" />
+
+        <Button
+            android:id="@+id/btnConcluirPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Concluir Pedido" />
+    </LinearLayout>
+</ScrollView>
