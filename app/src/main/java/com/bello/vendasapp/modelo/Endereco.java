@@ -6,9 +6,8 @@ public class Endereco {
     private String numero;
     private String bairro;
     private String cidade;
-    private String uf; // Unidade Federativa
+    private String uf;
 
-    // Construtor
     public Endereco(int codigo, String logradouro, String numero, String bairro, String cidade, String uf) {
         this.codigo = codigo;
         this.logradouro = logradouro;
@@ -18,7 +17,14 @@ public class Endereco {
         this.uf = uf;
     }
 
-    // Getters e Setters
+    public Endereco(String logradouro, String numero, String bairro, String cidade, String uf) {
+        this.logradouro = logradouro;
+        this.numero = numero;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.uf = uf;
+    }
+
     public int getCodigo() { return codigo; }
     public void setCodigo(int codigo) { this.codigo = codigo; }
     public String getLogradouro() { return logradouro; }

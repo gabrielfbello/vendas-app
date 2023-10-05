@@ -39,6 +39,12 @@
             android:layout_height="wrap_content"
             android:hint="UF"/>
 
+        <Spinner
+            android:id="@+id/spinnerClientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
         <Button
             android:id="@+id/btnSalvarEndereco"
             android:layout_width="match_parent"

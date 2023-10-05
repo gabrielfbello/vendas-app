@@ -1,16 +1,15 @@
 package com.bello.vendasapp.modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cliente {
     private int codigo;
     private String nome;
     private String cpf;
     private String dataNasc;
     private float codigoEndereco;
-    private String logradouro;
-    private String numero;
-    private String bairro;
-    private String cidade;
-    private String uf;
+    List<Endereco> enderecos = new ArrayList<>();
 
     // Construtor
     public Cliente(String nome, String cpf, String dataNasc) {
@@ -32,6 +31,14 @@ public class Cliente {
     public void setDataNasc(String dataNasc) { this.dataNasc = dataNasc; }
     public float getCodigoEndereco() { return codigoEndereco; }
     public void setCodigoEndereco(int codigoEndereco) { this.codigoEndereco = codigoEndereco; }
+
+    public void adicionarEndereco(Endereco endereco) {
+        this.enderecos.add(endereco);
+    }
+
+    public void removerEndereco(Endereco endereco) {
+        this.enderecos.remove(endereco);
+    }
 
     @Override
     public String toString() {

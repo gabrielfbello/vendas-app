@@ -19,5 +19,5 @@
     <item
         android:id="@+id/navigation_endereco"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Endereço" />
+        android:title="Endereços" />
 </menu>
