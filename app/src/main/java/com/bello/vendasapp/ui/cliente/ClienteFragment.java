@@ -45,16 +45,13 @@ public class ClienteFragment extends Fragment {
             return;
         }
 
-        // Adiciona cliente ao ViewModel compartilhado.
-        Cliente novoCliente = new Cliente(nome, cpf, dataNasc); // Supondo que você tem um construtor adequado em seu modelo Cliente.
+        Cliente novoCliente = new Cliente(nome, cpf, dataNasc);
         sharedViewModel.adicionarCliente(novoCliente);
 
-        // Limpa os campos após a adição
         binding.editTextNome.setText("");
         binding.editTextCPF.setText("");
         binding.editTextDataNasc.setText("");
 
-        // Log e Toast para confirmar a ação
         Toast.makeText(getContext(), "Cliente adicionado com sucesso!", Toast.LENGTH_SHORT).show();
 
         System.out.println("Cliente adicionado: " + novoCliente);
