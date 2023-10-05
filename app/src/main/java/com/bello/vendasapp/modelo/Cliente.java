@@ -6,6 +6,11 @@ public class Cliente {
     private String cpf;
     private String dataNasc;
     private float codigoEndereco;
+    private String logradouro;
+    private String numero;
+    private String bairro;
+    private String cidade;
+    private String uf;
 
     // Construtor
     public Cliente(String nome, String cpf, String dataNasc) {

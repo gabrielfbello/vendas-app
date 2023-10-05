@@ -105,7 +105,7 @@ public class PedidoFragment extends Fragment {
     }
 
     private void updateFinalValue() {
-        valorFinalPedido = valorTotal; // default
+        valorFinalPedido = valorTotal;
 
         if (binding.radioButtonAVista.isChecked()) {
             valorFinalPedido = valorTotal * (1 - DESCONTO_A_VISTA);

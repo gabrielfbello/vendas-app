@@ -22,4 +22,10 @@
         android:name="com.bello.vendasapp.ui.itens.ItemFragment"
         android:label="Itens"
         tools:layout="@layout/fragment_itens" />
+
+    <fragment
+        android:id="@+id/navigation_endereco"
+        android:name="com.bello.vendasapp.ui.endereco.EnderecoFragment"
+        android:label="Endereço"
+        tools:layout="@layout/fragment_endereco" />
 </navigation>

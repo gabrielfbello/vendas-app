@@ -26,7 +26,6 @@ public class ItemFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        // Note que aqui não estou usando ViewBinding, então vamos inflar a view diretamente
         View root = inflater.inflate(R.layout.fragment_itens, container, false);
 
         sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);

@@ -16,4 +16,8 @@
         android:icon="@android:drawable/ic_menu_compass"
         android:title="Itens" />
 
+    <item
+        android:id="@+id/navigation_endereco"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Endereço" />
 </menu>
