@@ -11,7 +11,6 @@ public class Cliente {
     private float codigoEndereco;
     List<Endereco> enderecos = new ArrayList<>();
 
-    // Construtor
     public Cliente(String nome, String cpf, String dataNasc) {
         this.codigo = codigo;
         this.nome = nome;
@@ -38,6 +37,10 @@ public class Cliente {
 
     public void removerEndereco(Endereco endereco) {
         this.enderecos.remove(endereco);
+    }
+
+    public List<Endereco> getEnderecos() {
+        return enderecos;
     }
 
     @Override

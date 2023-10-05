@@ -19,7 +19,8 @@
             android:id="@+id/edtNumero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Número"/>
+            android:hint="Número"
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/edtBairro"

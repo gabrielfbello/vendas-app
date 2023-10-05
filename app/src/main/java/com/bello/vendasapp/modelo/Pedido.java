@@ -5,17 +5,17 @@ import java.util.List;
 
 public class Pedido {
     private int codigo;
-    private int codigoCliente; // Assumindo que é uma chave estrangeira para Cliente.
+    private int codigoCliente;
+
     private List<Item> itens;
     private BigDecimal valorTotal;
     private String condicaoPagamento;
     private int numeroParcelas;
     private BigDecimal valorParcela;
-    private String enderecoEntrega;
+    private List<Endereco> enderecoEntrega;
 
-    // Construtor
     public Pedido(int codigo, int codigoCliente, List<Item> itens, BigDecimal valorTotal, String condicaoPagamento,
-                  int numeroParcelas, BigDecimal valorParcela, String enderecoEntrega) {
+                  int numeroParcelas, BigDecimal valorParcela, List<Endereco> enderecoEntrega) {
         this.codigo = codigo;
         this.codigoCliente = codigoCliente;
         this.itens = itens;
@@ -41,6 +41,6 @@ public class Pedido {
     public void setNumeroParcelas(int numeroParcelas) { this.numeroParcelas = numeroParcelas; }
     public BigDecimal getValorParcela() { return valorParcela; }
     public void setValorParcela(BigDecimal valorParcela) { this.valorParcela = valorParcela; }
-    public String getEnderecoEntrega() { return enderecoEntrega; }
-    public void setEnderecoEntrega(String enderecoEntrega) { this.enderecoEntrega = enderecoEntrega; }
+    public List<Endereco> getEnderecoEntrega() { return enderecoEntrega; }
+    public void setEnderecoEntrega(List<Endereco> enderecoEntrega) { this.enderecoEntrega = enderecoEntrega; }
 }
